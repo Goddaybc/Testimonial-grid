@@ -1,0 +1,162 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Colors */
+  --VioletColor: hsl(263, 55%, 52%);
+  --VeryDarkGrayishBlue: hsl(217, 19%, 35%);
+  --VeryDarkBlackishBlue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+  --LightGray: hsl(0, 0%, 81%);
+  --LightGrayishBlue: hsl(210, 46%, 95%);
+  /* Padding */
+  --PADDING-SIDE: 2.5%;
+  --PADDING-TB: 0.25em;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100%;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  padding: 20px;
+  font-size: 15px;
+}
+.container {
+  width: 100%;
+  max-width: 375px;
+  background-color: var(--LightGrayishBlue);
+  overflow: hidden;
+  border-radius: 8px;
+  /* margin-top: 5px; */
+  padding: 1rem;
+}
+.cards {
+  position: relative;
+}
+.card {
+  text-align: left;
+  /* margin: 0.5rem 0; */
+  margin-bottom: 1rem;
+  padding: 1rem;
+  max-width: 800px;
+  border-radius: 1rem;
+}
+.cards img {
+  border-radius: 50%;
+}
+.details {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  top: 1rem;
+  margin-left: 2rem;
+  padding-left: 2.2rem;
+}
+.name,
+.tag {
+  margin: 0.2rem 0;
+}
+
+.card-daniel {
+  background-color: var(--VioletColor);
+  background-image: url(./images/bg-pattern-quotation.svg);
+  background-position: top right 20px;
+  background-repeat: no-repeat;
+  background-size: 100px;
+  position: relative;
+  /* min-height: 400px; */
+}
+.card-daniel .name {
+  color: #e0c4e9;
+}
+.card-daniel .tag {
+  color: hsla(285, 46%, 84%, 0.5);
+}
+.quotes {
+  line-height: 1.5;
+}
+.card-daniel > .quotes {
+  color: hsla(285, 46%, 84%, 0.7);
+}
+
+.card-jonathan {
+  background-color: var(--VeryDarkGrayishBlue);
+  position: relative;
+  /* height: 3px; */
+}
+.card-jonathan .name {
+  color: #e0e4e7;
+}
+.card-jonathan .tag {
+  color: hsla(206, 13%, 89%, 0.5);
+}
+.card-jonathan > .quotes {
+  color: hsla(206, 13%, 89%, 0.7);
+}
+.card-jeanette {
+  position: relative;
+  background-color: var(--White);
+}
+.card-jeanette .name {
+  color: #80848e;
+}
+.card-jeanette .tag {
+  color: hsla(223, 6%, 53%, 0.5);
+}
+.card-jeanette > .review {
+  color: #60646c;
+}
+.card-jeanette > .quotes {
+  color: hsla(223, 6%, 53%, 0.7);
+}
+.card-patrick {
+  position: relative;
+  background-color: var(--VeryDarkBlackishBlue);
+}
+.card-patrick .name {
+  color: #cbcfd7;
+}
+.card-patrick .tag {
+  color: hsla(220, 13%, 82%, 0.5);
+}
+.card-patrick > .quotes {
+  color: hsla(220, 13%, 82%, 0.7);
+}
+.card-kira {
+  position: relative;
+  background-color: var(--White);
+}
+.card-kira.name {
+  color: #60646c;
+}
+.card-kira .tag {
+  color: hsla(220, 6%, 40%, 0.5);
+}
+.card-kira > .review {
+  color: #60646c;
+}
+.card-kira > .quotes {
+  color: hsla(220, 6%, 40%, 0.7);
+}
+.review {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+  font-weight: bold;
+  color: var(--White);
+  line-height: 1.5;
+}
+footer {
+  text-align: center;
+}
+.copy {
+  color: rebeccapurple;
+}

@@ -13,8 +13,9 @@
     />
 
     <title>Frontend Mentor | [Challenge Name Here]</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/main.js" defer></script>
 
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
         font-size: 11px;
@@ -26,92 +27,83 @@
     </style>
   </head>
   <body>
-    <header class="header">
-      <nav class="header__nav">
-        <ul class="header__ul">
-          <li>
-            <a href="#">Tutors</a>
-          </li>
-          <li>
-            <a href="#">Prices</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
-          <li>
-            <a href="#">About</a
-          </li>
-        </ul>
-      </nav>
-      <h1 class="header__h1">HEAR FROM OUR STUDENTS</h1>
-    </header>
-
+    <div class="container"> 
     <main>
       <section class="cards">
         <div class="card-daniel card">
           <img src="./images/image-daniel.jpg" alt="image-daniel" />
+          <div class="details">
           <h3 class="name">Daniel Clifford</h3>
           <h5 class="tag">Verified Graduate</h5>
-          <div>
+
+          </div>
+          <div class="review nowrap">
             I received a job offer mid-course, and the subjects I learned were
             current, if not more so, in the company I joined. I honestly feel I
             got every penny’s worth.</div> 
-            <p class="speech">“ I was an EMT for many years before I
+            <p class="quotes nowrap">“I was an EMT for many years before I
             joined the bootcamp. I’ve been looking to make a transition and have
             heard some people who had an amazing experience here. I signed up
             for the free intro course and found it incredibly fun! I enrolled
             shortly thereafter. The next 12 weeks was the best - and most
             grueling - time of my life. Since completing the course, I’ve
             successfully switched careers, working as a Software Engineer at a
-            VR startup. ”
+            VR startup.”
           </p>
         </div>
         <div class="card-jonathan card">
           <img src="./images/image-jonathan.jpg" alt="image-jonathan" />
+          <div class="details">
           <h3 class="name">Jonathan Walters</h3>
           <h5 class="tag">Verified Graduate</h5>
+          </div>
+
           
-            <div>The team was very supportive and kept me motivated</div> <p class="speech"> “ I started as a
+            <div class="review nowrap">The team was very supportive and kept me motivated</div> <p class="quotes nowrap"> “I started as a
             total newbie with virtually no coding skills. I now work as a mobile
             engineer for a big company. This was one of the best investments
-            I’ve made in myself. ”
+            I’ve made in myself.”
           </p>
         </div>
 
         <div class="card-jeanette card">
           <img src="./images/image-jeanette.jpg" alt="image-jeanette" />
+          <div class="details">
           <h3 class="name">Jeanette Harmon</h3>
           <h5 class="tag">Verified Graduate</h5>
+          </div>
           
-            <div>An overall wonderful and rewarding experience</div> <p class="speech">“ Thank you for the
+            <div class="review nowrap">An overall wonderful and rewarding experience</div> <p class="quotes nowrap">“Thank you for the
             wonderful experience! I now have a job I really enjoy, and make a
-            good living while doing something I love. ”
+            good living while doing something I love.”
           </p>
         </div>
 
         <div class="card-patrick card">
           <img src="./images/image-patrick.jpg" alt="image-patrick" />
+          <div class="details">
           <h3 class="name">Patrick Abrams</h3>
           <h5 class="tag">Verified Graduate</h5>
-          
-            <div>            Awesome teaching support from TAs who did the bootcamp themselves.
+          </div>
+            <div class="review nowrap">Awesome teaching support from TAs who did the bootcamp themselves.
             Getting guidance from them and learning from their experiences was
             easy.</div>
- <p class="speech">“The staff seem genuinely concerned about my progress which I
+          <p class="quotes nowrap">“The staff seem genuinely concerned about my progress which I
             find really refreshing. The program gave me the confidence necessary
             to be able to go out in the world and present myself as a capable
             junior developer. The standard is above the rest. You will get the
             personal attention you need from an incredible community of smart
-            and amazing people. ”
+            and amazing people.”
           </p>
         </div>
 
         <div class="card-kira card">
           <img src="./images/image-kira.jpg" alt="image-kira" />
+          <div class="details">
           <h3 class="name">Kira Whittle</h3>
           <h5 class="tag">Verified Graduate</h5>
-          
-            <div>Such a life-changing experience. Highly recommended!</div> <p class="speech">“ Before
+          </div>
+            <div class="review nowrap">Such a life-changing experience. Highly recommended!</div> <p class="quotes nowrap">“Before
             joining the bootcamp, I’ve never written a line of code. I needed
             some structure from professionals who can help me learn programming
             step by step. I was encouraged to enroll by a former student of
@@ -123,22 +115,24 @@
             often referred to it during interviews as an example of my
             developent experience. It certainly helped me land a job as a
             full-stack developer after receiving multiple offers. 100%
-            recommend! ”
+            recommend!”
           </p>
         </div>
       </section>
     </main>
 
-    <div class="attribution">
+    <!-- <div class="attribution">
       Challenge by
       <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    </div> -->
         <footer class="footer">
       <p> 
-        <span class="nowrap">Copyright &copy; <time id="year"></time></span
+        <span class="nowrap">Copyright &copy <span class="copy">Godday</span>; <time id="year"></time></span
       </p>
     </footer>
+    </div>
+    </div>
   </body>
 </html>
